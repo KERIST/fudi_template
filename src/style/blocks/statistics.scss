@@ -1,0 +1,13 @@
+.statistics {
+  border-bottom: 1px solid $dark-gray_color;
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+    @media screen and (max-width: $mobile) {
+      flex-flow: row wrap;
+      justify-content: space-around;
+    }
+  }
+}

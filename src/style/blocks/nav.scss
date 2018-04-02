@@ -1,0 +1,17 @@
+.nav{
+  &__item{
+    @include font(remy(14), $lato-font, 700);
+    text-shadow: -0.9px 0.5px 40px rgba(1, 1, 1, 0.55);
+    color: $promo-color;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-right: remy(30);
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+  @media (max-width: 640px) {
+    display: none;
+    position: fixed;
+  }
+}

@@ -1,0 +1,16 @@
+.footer{
+  background: $page-bg;
+  padding: 36px 0;
+  &__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media screen and (max-width: $mobile) {
+      flex-flow: column-reverse;
+      justify-content: center;
+    }
+  }
+  @media screen and (max-width: $mobile) {
+    padding: 10px 0;
+  }
+}

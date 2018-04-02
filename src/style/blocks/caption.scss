@@ -1,0 +1,32 @@
+.caption{
+  @include font(remy(18), $lato-font, 700);
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  padding: 8px 0;
+  &:after{
+    content: "";
+    width: 88px;
+    height: 1px;
+    position: absolute;
+    bottom:0;
+    left: 50%;
+    margin-left: -44px;
+    background: $caption-underline-color;
+  }
+  &_align_left{
+    text-align: left;
+    &:after{
+      left: 0;
+      margin-left: 0;
+      @media screen and (max-width: $mobile) {
+        text-align: center;
+        left: 50%;
+        margin-left: -44px;
+      }
+    }
+    @media screen and (max-width: $mobile) {
+      text-align: center;
+    }
+  }
+}

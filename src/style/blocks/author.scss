@@ -1,0 +1,9 @@
+.author{
+  color: #8b8b8b;
+  @include font(remy(14), $lato-font, 300);
+  text-transform: uppercase;
+  &__link{
+    color: $black_color;
+    font-weight: 400;
+  }
+}

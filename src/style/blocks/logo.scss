@@ -1,0 +1,14 @@
+.logo{
+  &__img{
+    max-width: 68px;
+    @media (max-width: 640px) {
+      max-width: 90%;
+    }
+  }
+  @media (max-width: $mobile) {
+    padding-top: 120px;
+  }
+  @media (max-width: $mobile-small) {
+    display: none;
+  }
+}

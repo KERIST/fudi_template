@@ -1,0 +1,15 @@
+.number{
+  @include font(remy(36), $lato-font);
+  padding: 55px 0;
+  &__amount {
+    color: $caption-color;
+    font-weight: 700;
+  }
+  &__name{
+    font-size: remy(16);
+  }
+  @media screen and (max-width: $mobile) {
+    font-size: remy(18);
+    padding: 10px 0;
+  }
+}

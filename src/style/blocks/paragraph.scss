@@ -1,0 +1,7 @@
+.paragraph{
+  @include font(remy(16), $lato-font, 300);
+  color: $txt-color;
+  text-align: justify;
+  line-height: 1.4em;
+  padding: 18px 0;
+}

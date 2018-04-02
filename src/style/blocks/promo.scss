@@ -1,0 +1,10 @@
+.promo{
+  background: url("../images/promo-bg.jpg") no-repeat top center;
+  background-size: cover;
+  @media (max-width: $mobile) {
+    background: url("../images/promo-mobile-bg.jpg") no-repeat bottom center;
+  }
+  @media screen and (max-width: $mobile-small){
+     background-size: cover;
+  }
+}

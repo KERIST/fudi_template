@@ -1,0 +1,37 @@
+.recipe{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  height: 14vw;
+  position: relative;
+  &__img{
+    max-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  &__amount{
+    margin-top: -7%;
+    opacity: 0.9;
+    text-shadow: -0.9px 0.5px 40px rgba(1, 1, 1, 0.55);
+    color: $white_color;
+    @include font(remy(15), $times-font, 700, italic);
+  }
+  &__name{
+    position: relative;
+    z-index: 3;
+    text-shadow: -0.9px 0.5px 40px rgba(1, 1, 1, 0.55);
+    color: $white_color;
+    @include font(remy(32), $lato-font, 700);
+    text-transform: uppercase;
+    @media screen and (max-width: $mobile-small){
+      font-size: remy(24);
+    }
+  }
+  @media (max-width: $mobile) {
+    height: 40vw;
+  }
+}

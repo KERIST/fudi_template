@@ -1,0 +1,9 @@
+.recipe-container{
+  display: flex;
+  padding: 40px 0 0 0;
+  @media (max-width: $mobile) {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+  }
+}

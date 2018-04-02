@@ -1,0 +1,16 @@
+.recipe-column{
+  width: 20%;
+  @media screen and (max-width: $mobile) {
+   width: 50%;
+    float: left;
+  }
+  &:last-child{
+    @media screen and (max-width: $mobile){
+      display: flex;
+      width: 100%;
+      .recipe{
+        width: 50%;
+      }
+    }
+  }
+}

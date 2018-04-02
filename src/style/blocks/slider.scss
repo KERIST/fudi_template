@@ -1,0 +1,55 @@
+.slider{
+  padding: 78px 0;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  background: url("../images/slider-bg.jpg") no-repeat center bottom;
+
+  &__img{
+    border-radius: 100%;
+    border: 5px solid $slider-border;
+    transition: opacity 1s;
+  }
+  &__txt{
+    @include font(remy(30), $lato-font, 300);
+    text-align: center;
+    color: $white_color;
+    line-height: 1.4em;
+    max-width: 900px;
+    opacity: .2;
+    padding: 20px 0;
+    transition: opacity 1s;
+  }
+  &__author{
+    @include font(remy(18), $lato-font, 300);
+    opacity: .2;
+    color: $white_color;
+    text-align: center;
+    padding-bottom: 38px;
+    transition: opacity 1s;
+  }
+  &__contorls{
+
+  }
+  &__dot{
+    cursor: pointer;
+    margin-right: 10px;
+    width: 10px;
+    height: 10px;
+    padding: 0;
+    background-color: white;
+    border: none;
+    border-radius: 100%;
+    opacity: .2;
+    transition: opacity 0.5s;
+    &_selected{
+      opacity: 1;
+    }
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+  &_hide{
+    opacity: 0;
+  }
+}
